@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Raízes do Amanhã</title>
+    
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Estilos locais (Caminho rígido) -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Instituto Raízes do Amanhã</h1>
+        <p>Transformando cidades através do reflorestamento urbano e da educação ambiental.</p>
+    </header>
+
+    <nav class="menu-principal">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+        <label for="menu-toggle" class="menu-toggle-label" aria-label="Abrir menu">&#9776;</label>
+        <ul>
+            <li class="menu-dropdown">
+                <a href="#home">Sobre</a>
+                <ul class="submenu">
+                    <li><a href="#quem-somos">Quem somos</a></li>
+                    <li><a href="#missao">Nossa missão</a></li>
+                    <li><a href="#impacto">Nosso impacto</a></li>
+                </ul>
+            </li>
+            <li><a href="#cadastro">Cadastre-se</a></li>
+        </ul>
+    </nav>
+
+    <!-- Ponto central de injeção dinâmica da SPA -->
+    <main id="conteudo-principal"></main>
+
+    <footer class="rodape">
+        <address>
+            <p>Endereço:<br>
+                Avenida das Palmeiras, 245 — Jardim Esperança<br>
+                São Paulo — SP</p>
+            <p>Telefone:<br>
+            <a href="tel:+551134567890">(11) 3456-7890</a></p>
+            <p>E-mail:<br>
+            <a href="mailto:contato@raizesdoamanha.org.br">contato@raizesdoamanha.org.br</a></p>
+        </address>
+        <p>Direitos autorais:<br>
+        © 2026 Instituto Raízes do Amanhã. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script local (Caminho rígido) -->
+    <script src="./script.js"></script>
+</body>
+</html>
