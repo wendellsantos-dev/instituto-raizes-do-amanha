@@ -191,8 +191,8 @@ function inicializarFormulario() {
 
             if (valorNome === '') {
                 boasvindas.textContent = 'Por favor, insira seu nome completo!';
-                boasvindas.className = '';
-                boasvindas.style.color = 'red';
+                boasvindas.className = 'text-danger fw-bold';
+                nomecompleto.focus();
                 return;
             }
 
