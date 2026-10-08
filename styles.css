@@ -271,10 +271,10 @@ fieldset {
    RESPONSIVIDADE (Telas menores que 768px - Celulares e Tablets)
    ========================================================================== */
 @media (max-width: 768px) {
-    .menu-principal {
+.menu-principal {
         flex-direction: column;
         padding: 1rem;
-        align-items: flex-end;
+        align-items: flex-start;
     }
 
     .menu-toggle-label {
