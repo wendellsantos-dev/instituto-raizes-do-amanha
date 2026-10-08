@@ -266,3 +266,68 @@ fieldset {
 .rodape a {
     color: var(--cor-branco);
 }
+
+/* ==========================================================================
+   RESPONSIVIDADE (Telas menores que 768px - Celulares e Tablets)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .menu-principal {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: flex-end;
+    }
+
+    .menu-toggle-label {
+        display: block;
+        font-size: 2rem;
+        color: var(--cor-primaria);
+        cursor: pointer;
+    }
+
+    .menu-principal ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .menu-toggle-input:checked ~ ul {
+        display: flex;
+    }
+
+    .menu-principal a {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    .menu-dropdown .submenu {
+        position: static;
+        display: none;
+        box-shadow: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .cabecalho {
+        padding: 2rem 1rem;
+    }
+
+    .secao {
+        padding: 2rem 1rem;
+    }
+
+    .form-container {
+        padding: 1.5rem 1rem;
+        margin: 1.5rem 1rem;
+    }
+
+    .campo-cep-grupo {
+        flex-direction: column;
+    }
+
+    .botao-cep {
+        width: 100%;
+    }
+}
